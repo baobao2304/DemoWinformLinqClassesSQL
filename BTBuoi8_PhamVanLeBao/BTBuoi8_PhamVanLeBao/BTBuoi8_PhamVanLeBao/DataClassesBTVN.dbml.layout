@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesBTVN">
+  <DataContextMoniker Name="/DataClassesBTVNDataContext" />
+  <nestedChildShapes>
+    <classShape Id="abbc928c-7f25-4534-b552-bb0e23463aec" absoluteBounds="0.75, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesBTVNDataContext/NXB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f22b7f11-9b1f-4d2a-bdd9-25c3c1134224" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bcef2299-0503-47ac-bf4e-74674f91632b" absoluteBounds="3.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesBTVNDataContext/Sach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="377727bb-0e48-4f5d-aac8-c2be4ca9643d" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.81814697265625); (3.5 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesBTVNDataContext/NXB/NXB_Sach" />
+      <nodes>
+        <classShapeMoniker Id="abbc928c-7f25-4534-b552-bb0e23463aec" />
+        <classShapeMoniker Id="bcef2299-0503-47ac-bf4e-74674f91632b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

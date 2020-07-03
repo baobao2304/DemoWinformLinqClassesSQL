@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLTV" Class="DataClassesBTVNDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-T572L83\SQLEXPRESS;Initial Catalog=QLTV;Persist Security Info=True;User ID=baobao2304" SettingsObjectName="BTBuoi8_PhamVanLeBao.Properties.Settings" SettingsPropertyName="QLTVConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NXB" Member="NXBs">
+    <Type Name="NXB">
+      <Column Name="manxb" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tennxb" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="diachi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="NXB_Sach" Member="Saches" ThisKey="manxb" OtherKey="manxb" Type="Sach" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sach" Member="Saches">
+    <Type Name="Sach">
+      <Column Name="masach" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tensach" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tacgia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="manxb" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="NXB_Sach" Member="NXB" ThisKey="manxb" OtherKey="manxb" Type="NXB" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
